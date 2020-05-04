@@ -9,9 +9,9 @@ You'll need to create a new node server. Open a new terminal within the project 
 
 ### Deployment
 
-1. `eb init`
-2. `eb cleate`
-3. `eb deploy`
+1. EBS setup: `eb init`
+2. EBS environment creation `eb create`
+3. EBS deployment update `eb deploy`
 
 ### Test URL
 
