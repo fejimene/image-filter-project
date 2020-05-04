@@ -1,4 +1,5 @@
 import express from 'express';
+import { Request, Response } from 'express';
 import bodyParser from 'body-parser';
 import {filterImageFromURL, deleteLocalFiles} from './util/util';
 
@@ -24,7 +25,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
   // RETURNS
   //   the filtered image file [!!TIP res.sendFile(filteredpath); might be useful]
 
-  app.get( "/filteredimage", async (req, res) => {
+  app.get( "/filteredimage", async (req: Request, res: Response) => {
     const image_url = req.query.image_url;
     if (!image_url || !isURL(image_url)) {
       res.send("No query param or not a valid URL format");
@@ -50,7 +51,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
   
   // Root Endpoint
   // Displays a simple message to the user
-  app.get( "/", async ( req, res ) => {
+  app.get( "/", async ( req: Request, res:Response ) => {
     res.send("try GET /filteredimage?image_url={{}}")
   } );
   
