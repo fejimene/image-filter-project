@@ -16,7 +16,3 @@ You'll need to create a new node server. Open a new terminal within the project 
 ### Test URL
 
 [Test URL](http://image-filter-starter-code-fejimene.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://live.staticflickr.com/4865/31914255397_bb6130698e_h.jpg)
-
-```typescript
-
-```
