@@ -24,7 +24,6 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
   // RETURNS
   //   the filtered image file [!!TIP res.sendFile(filteredpath); might be useful]
 
-  /**************************************************************************** */
   app.get( "/filteredimage", async (req, res) => {
     const image_url = req.query.image_url;
     if (!image_url || !isURL(image_url)) {
@@ -48,7 +47,6 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
     const url = new RegExp(urlRegex, 'i');
     return str.length < 2083 && url.test(str);
   }
-  //! END @TODO1
   
   // Root Endpoint
   // Displays a simple message to the user
